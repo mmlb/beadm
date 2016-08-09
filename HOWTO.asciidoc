@@ -8,7 +8,7 @@
 [[section]]
 ===== 2012/04/27
 
-Some time ago I found a good, reliable way of using and installing FreeBSD and described it in my _Modern FreeBSD Install_ *[1] [2]* HOWTO.
+Some time ago I found a good, reliable way of using and installing FreeBSD and described it in my _Modern FreeBSD Install_ footnote:[http://forums.freebsd.org/showthread.php?t=10334] footnote:[http://forums.freebsd.org/showthread.php?t=12082] HOWTO.
 Now, more then a year later I come back with my experiences about that setup and a proposal of newer and probably better way of doing it.
 
 [[introduction]]
@@ -21,10 +21,10 @@ This guide was written when FreeBSD 9.0 and 8.3 were available and definitely wo
 Earlier, I was not that confident about booting from the ZFS pool, but there is some very neat feature that made me think ZFS boot is now mandatory.
 If You just smiled, You know that I am thinking about _Boot Environments_ feature from Illumos/Solaris systems.
 
-In case You are not familiar with the _Boot Environments_ feature, check the _Managing Boot Environments with Solaris 11 Express_ PDF white paper **[3]**.
-Illumos/Solaris has the `beadm(1M)` *[4]* utility and while Philipp Wuensche wrote the `manageBE` script as replacement **[5]**, it uses older style used at times when OpenSolaris (and SUN) were still having a great time.
+In case You are not familiar with the _Boot Environments_ feature, check the _Managing Boot Environments with Solaris 11 Express_ PDF white paper footnote:[http://docs.oracle.com/cd/E19963-01/pdf/820-6565.pdf].
+Illumos/Solaris has the `beadm(1M)` footnote:[http://docs.oracle.com/cd/E19963-01/html/821-1462/beadm-1m.html] utility and while Philipp Wuensche wrote the `manageBE` script as replacement footnote:[http://anonsvn.h3q.com/projects/freebsd-patches/wiki/manageBE], it uses older style used at times when OpenSolaris (and SUN) were still having a great time.
 
-I spent last couple of days writing an up-to-date replacement for FreeBSD compatible `beadm` utility, and with some tweaks from today I just made it available at _SourceForge_ *[6]* if You wish to test it.
+I spent last couple of days writing an up-to-date replacement for FreeBSD compatible `beadm` utility, and with some tweaks from today I just made it available at _SourceForge_ footnote:[https://sourceforge.net/projects/beadm] if You wish to test it.
 Currently its about 200 lines long, so it should be pretty simple to take a look at it.
 I tried to make it as compatible as possible with the 'upstream' version, along with some small improvements, it currently supports basic functions like list, create, destroy and activate.
 
@@ -373,17 +373,3 @@ You may as well transport that environment into You laptop/workstation and upgra
 ..  Sent the upgraded `upgrade` environment onto _production_ server.
 ..  Activate upgraded `upgrade` environment on the _production_ server.
 ..  Reboot into the `upgrade` environment on the _production_ server.
-
-[[references]]
-==== 7. References
-
-* *`[1]`* link:[http://forums.freebsd.org/showthread.php?t=10334]
-* *`[2]`* link:[http://forums.freebsd.org/showthread.php?t=12082]
-* *`[3]`* link:[http://docs.oracle.com/cd/E19963-01/pdf/820-6565.pdf]
-* *`[4]`* link:[http://docs.oracle.com/cd/E19963-01/html/821-1462/beadm-1m.html]
-* *`[5]`* link:[http://anonsvn.h3q.com/projects/freebsd-patches/wiki/manageBE]
-* *`[6]`* link:[https://sourceforge.net/projects/beadm/]
-
-The last part of the HOWTO remains the same as Year ago ...
-
-You can now add your users, services and packages as usual on any FreeBSD system, have fun ;)
