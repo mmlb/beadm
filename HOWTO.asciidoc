@@ -1,12 +1,7 @@
 [[freebsd-zfs-madness]]
 == FreeBSD ZFS Madness
-
-
-[[slawomir-wojtczak-vermaden]]
-==== Slawomir Wojtczak (vermaden)
-
-[[section]]
-===== 2012/04/27
+Slayomir Wojtczak (vermaden)
+v1.0, 2012-04-27
 
 Some time ago I found a good, reliable way of using and installing FreeBSD and described it in my _Modern FreeBSD Install_ footnote:[http://forums.freebsd.org/showthread.php?t=10334] footnote:[http://forums.freebsd.org/showthread.php?t=12082] HOWTO.
 Now, more then a year later I come back with my experiences about that setup and a proposal of newer and probably better way of doing it.
